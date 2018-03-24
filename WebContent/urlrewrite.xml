@@ -1,0 +1,1872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"  "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+ 
+	<urlrewrite default-match-type="wildcard" use-query-string="true">
+	
+	<rule>
+        	<from>^.*\.(js|css|gif|png|jpg|jpeg)$</from>
+        	<set type="expires">6 hours</set>
+    	</rule>
+
+
+	<rule>
+	  <from>/bt/**</from>
+	  <to type="permanent-redirect">/$1</to>
+	</rule>
+	<rule>
+	  <from>/bt</from>
+	  <to type="permanent-redirect">/</to>
+	</rule>
+	<rule>
+	  <from>/kullman/</from>
+	  <to type="permanent-redirect">http://businesstoday.intoday.in/bt/story/10285/1/in-india-i-see-a-lot-more-acceptance-of-gender-in-the-workplace.html</to>
+	</rule>
+	<rule>
+	  <from>/indianmensurvey/</from>
+	  <to type="permanent-redirect">http://specials.indiatoday.com/indianmensurvey/index.php</to>
+	</rule>
+	<rule>
+	  <from>/hdfc/</from>
+	  <to type="permanent-redirect">http://subscriptions.digitaltoday.in/subscriptions/businesstoday/hdfc-offer.html</to>
+	</rule>
+	<rule>
+	  <from>/budget/</from>
+	  <to type="permanent-redirect">http://m.businesstoday.in/budget/2016/</to>
+	</rule>
+
+
+
+	<rule>
+		<from>/editor/</from>
+		<to type="permanent-redirect">http://businesstoday.intoday.in/sectionlist/5/1/editors-note.html</to>
+	</rule>
+	
+	<rule>
+		<from>/bt500-2011-rankings</from>
+		<to type="permanent-redirect">http://m.businesstoday.in/story/business-today-rankings-top-500-companies-in-india/1/19435.html</to>
+	</rule>
+	
+	<rule>
+		<from>/bt500-coal-india-entry</from>
+		<to type="permanent-redirect">http://m.businesstoday.in/story/bt-500-rankings-coal-india-new-entry-chairman-nc-interview/1/19438.html</to>
+	</rule>
+	
+	<rule>
+		<from>/bt500-management-tips</from>
+		<to type="permanent-redirect">http://m.businesstoday.in/story/bt-500-management-tips-to-learn-from-indian-companies/1/19440.html</to>
+	</rule>
+	
+	<rule>
+		<from>/indias-top500-companies-toppers</from>
+		<to type="permanent-redirect">http://businesstoday.intoday.in/photoplay/bt-500-indias-most-valuable-companies/1/235.html</to>
+	</rule>
+
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">105</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593013/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=105</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">100</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593057/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=100</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">111</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593059/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=111</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">101</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593061/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=101</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">110</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593062/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=110</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">109</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593063/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=109</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">103</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593064/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=103</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">104</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593065/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=104</to>   
+	</rule>
+	<rule>
+	    <condition name="user-agent" operator="notequal">MediafedMetrics*</condition>
+		<condition name="sid" type="parameter" operator="equal">102</condition>
+		<from>/rss/rssstory\.jsp</from>
+		<to type="permanent-redirect">http://businesstoday.feedsportal.com/c/33681/f/593066/index.rss?http://businesstoday.intoday.in/rss/rssstory.jsp?sid=102</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/author/([^/]*)$</from>
+	  <to>/author/index.jsp?authorName=$1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/author/([^/]*)/$</from>
+	  <to>/author/index.jsp?authorName=$1</to>
+	</rule>
+	
+	
+	<!-- Start Photos -->
+	
+	<rule match-type="regex">
+	  <from>/photos/$</from>
+	  <to>/photosectionlist.jsp?page=1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/photos$</from>
+	  <to>/photosectionlist.jsp?page=1</to>
+	</rule>
+	
+	<!--	/photos?page=1	OR	/photos?page=2	-->
+	<rule match-type="regex">
+	  <from>/photos\?page=([0-9]+)$</from>  
+	  <to>/photosectionlist.jsp?page=$1</to>
+	</rule>
+	
+	
+	<!-- Earlier 	/photos/in-th-news/38 	OR		/photos/tech-watch/39	-->
+	<!-- Now	/photos/in-th-news	OR	/photos/tech-watch	-->
+	<rule match-type="regex">
+	  <from>/photos/([^/]*)$</from>  
+	  <to>/photosection.jsp?sectionName=$1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/photos/([^/]*)/$</from>  
+	  <to>/photosection.jsp?sectionName=$1</to>   
+	</rule>
+	
+	
+		
+	<!-- Earlier 	/photos/in-th-news/38?page=1	OR		/photos/tech-watch/39?page=1	-->
+	<!-- Now		/photos/in-th-news?page=1		OR		/photos/tech-watch?page=1	-->
+	<rule match-type="regex">
+	  <from>/photos/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/photosection.jsp?sectionName=$1&amp;page=$2</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/photos/([^/]*)/([^/]*)/([0-9]+).html</from>
+	  <to>/photoplaytest.jsp?galleryid=$3</to>   
+	</rule>
+	
+	
+	<!-- End Photos -->
+	
+	
+	<!-- Start Opinion -->
+	
+	<rule match-type="regex">
+	  <from>/opinion$</from>
+	  <to>/section.jsp?section=102&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/opinion/$</from>
+	  <to>/section.jsp?section=102&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/opinion/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=opinion&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/opinion/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=opinion&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/opinion/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=opinion&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<!--  End Opinion -->
+	
+	<!-- 
+	<rule match-type="regex">
+	  <from>/moneytoday/issue/([^/]*)$</from>
+	  <to>/issue.jsp?issuedate=$1&amp;magazine=2</to>   
+	</rule>
+	 -->
+	 
+	<rule match-type="regex">
+	  <from>/moneytoday/issue/([^/]*)$</from>
+	  <to>/mtmoreissue.jsp?issuedate=$1&amp;magazine=2</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets/issue/([^/]*)$</from>    
+	  <to>/issue.jsp?issuedate=$1&amp;magazine=6</to>   
+	</rule>
+	<rule match-type="regex">
+	  <from>/gadgetsandgizmos/issue/([^/]*)$</from>    
+	  <to>/issue.jsp?issuedate=$1&amp;magazine=6</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;subcategory=$3&amp;sef=$4&amp;storyid=$5</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;sef=$3&amp;storyid=$4</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;sef=$2&amp;storyid=$3</to>   
+	</rule>
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;subcategory=$3&amp;sef=$4&amp;storyid=$5</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;sef=$3&amp;storyid=$4</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;sef=$2&amp;storyid=$3</to>   
+	</rule>
+	
+	
+	<!-- Start Videos -->
+	
+	<rule match-type="regex">
+	  <from>/videos/$</from>
+	  <to>/videosection.jsp</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos$</from>
+	  <to>/videosection.jsp</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/technology$</from>
+	  <to>/videolist.jsp?currentTitle=technology&amp;category=technology&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	 
+	<rule match-type="regex">
+	  <from>/videos/technology/$</from>
+	  <to>/videolist.jsp?currentTitle=technology&amp;category=technology&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/technology\?page=([0-9]+)$</from>
+	  <to>/videolist.jsp?currentTitle=technology&amp;category=technology&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)$</from>
+	  <to>/videolist.jsp?currentTitle=$1&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/$</from>
+	  <to>/videolist.jsp?currentTitle=$1&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/videolist.jsp?currentTitle=$1&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)/$</from>
+	  <to>/videosublist.jsp?categoryTitle=$1&amp;catName=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)$</from>
+	  <to>/videosublist.jsp?categoryTitle=$1&amp;catName=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/videosublist.jsp?categoryTitle=$1&amp;catName=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)/([0-9]+)$</from>
+	  <to>/videosublist.jsp?categoryTitle=$1&amp;catName=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)/([0-9]+)/$</from>
+	  <to>/videosublist.jsp?categoryTitle=$1&amp;catName=$2</to>
+	</rule>
+	
+	<!-- Adding for Video.jsp -->
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)/([^/]*)/([0-9]+).html</from>
+	  <to>/video.jsp?currentVideoId=$4</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/videos/([^/]*)/([^/]*)/([0-9]+).html</from>
+	  <to>/video.jsp?currentVideoId=$3</to>
+	</rule>
+	
+	
+	
+	
+	<!-- End Videos -->
+	
+	
+	<!-- Start Magazine Related -->
+	
+	<rule match-type="regex">
+	  <from>/magazine$</from>  
+	  <to>/archive_single.jsp?magazineName=bt</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/$</from>  
+	  <to>/archive_single.jsp?magazineName=bt</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine\?page=([0-9]+)$</from>  
+	  <to>/archive_single.jsp?magazineName=bt&amp;page=$1</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/magazine/issue/([^/]*)$</from>
+	  <to>/issue.jsp?issuedate=$1&amp;magazine=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/btmoreissue/([^/]*)$</from>
+	  <to>/btmoreissue.jsp?issuedate=$1&amp;magazine=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/magazine/money$</from>  
+	  <to>/sectionlist.jsp?sectionName=money&amp;magazineid=1&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/money\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=money&amp;magazineid=1&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/bt-more$</from>  
+	  <to>/btmore.jsp</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/bt-more/$</from>  
+	  <to>/btmore.jsp</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/bt-more\?page=([0-9]+)$</from>
+	  <to>/btmore.jsp</to>
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineID=1&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineID=1&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineID=1&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)$</from>  
+	  <to>/categorylist.jsp?sectionName=$1&amp;categoryName=$2&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)/$</from>  
+	  <to>/categorylist.jsp?sectionName=$1&amp;categoryName=$2&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)\?page=([0-9]+)$</from>  
+	  <to>/categorylist.jsp?sectionName=$1&amp;categoryName=$2&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/b-school-debate/([^/]*)/story/([0-9]+).html$</from>
+	  <to>/bschoolsdebate/debateindex.jsp?sectionName=b-school-debate&amp;sef=$1&amp;debateid=$2&amp;issuefree=0</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html$</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;subcategory=$3&amp;sef=$4&amp;storyid=$5&amp;issuefree=0</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html$</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;sef=$3&amp;storyid=$4&amp;issuefree=0</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/magazine/([^/]*)/([^/]*)/story/([0-9]+).html$</from>
+	  <to>/story.jsp?section=$1&amp;sef=$2&amp;storyid=$3&amp;issuefree=0</to>   
+	</rule>
+	
+	<!-- End Magazine -->
+
+
+
+	<!-- SectionList (sectionlist/57/1/financial-planning.html) converted into (moneytoday/financial-planning/pageNo-->
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/$</from>  
+	  <to>/archive_single.jsp?magazineName=mt</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/technology$</from>  
+	  <to>/sectionlist.jsp?sectionName=technology&amp;magazineid=2</to>
+	</rule>
+	<rule match-type="regex">
+	  <from>/moneytoday/technology\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=technology&amp;magazineid=2</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/top-story$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=2&amp;issuefree=1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/top-story/$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=2&amp;issuefree=1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/top-story\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=2&amp;issuefree=1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=2&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)/$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=2&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/moneytoday/([^/]*)\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=2&amp;issuefree=0</to>
+	</rule>
+	
+	
+	<!-- SectionList (sectionlist/133/1/cover-story-gandg.html) converted into (gadgets/cover-story-gandg)	-->
+	<rule match-type="regex">
+	  <from>/gadgets/$</from>  
+	  <to>/gadgetsngizmos.jsp?magazineName=gng</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets/top-story$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=6&amp;issuefree=1</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/gadgets/top-story/$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=6&amp;issuefree=1</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets/top-story\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=top-story&amp;magazineid=6&amp;issuefree=1</to>
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=6&amp;issuefree=0</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)/$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=6&amp;issuefree=0</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=6&amp;issuefree=0</to>
+	</rule>
+	
+	
+	<!--
+	<rule match-type="regex">
+	  <from>/gadgets/([^/]*)\?page=([0-9]+)$</from>  
+	  <to>/sectionlist.jsp?sectionName=$1&amp;magazineid=6&amp;issuefree=0</to>
+	</rule>
+	-->
+	
+	<rule match-type="regex">
+	  <from>/technology/top-story$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=top-story&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/top-story/$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=top-story&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/top-story\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=top-story&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<!-- Sections -->
+	<rule match-type="regex">
+	  <from>/specials/$</from>
+	  <to>/section.jsp?section=124&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive/$</from>
+	  <to>/section.jsp?section=124&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/top-story/$</from>
+	  <to>/section.jsp?section=99&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/current/$</from>
+	  <to>/section.jsp?section=100&amp;magazine=1&amp;issuefree=1</to>   
+	</rule> 
+	 
+	<rule match-type="regex">
+	  <from>/sectors/$</from>
+	  <to>/section.jsp?section=101&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/management/$</from>
+	  <to>/section.jsp?section=103&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	<rule match-type="regex">
+	  <from>/lifestyle/$</from>
+	  <to>/section.jsp?section=104&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest/$</from>
+	  <to>/section.jsp?section=105&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see/$</from>
+	  <to>/section.jsp?section=106&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular/$</from>
+	  <to>/section.jsp?section=107&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/company-in-focus/$</from>
+	  <to>/section.jsp?section=108&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/money/$</from>
+	  <to>/section.jsp?section=109&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/$</from>
+	  <to>/section.jsp?section=110&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/markets/$</from>
+	  <to>/section.jsp?section=111&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-mailer/$</from>
+	  <to>/section.jsp?section=113&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/bt-mailer\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=113&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/obamas-india-visit/$</from>
+	  <to>/section.jsp?section=114&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/india-economic-summit/$</from>
+	  <to>/section.jsp?section=115&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bigstory/$</from>
+	  <to>/section.jsp?section=116&amp;magazine=2&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-magazine/$</from>
+	  <to>/section.jsp?section=117&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2011-2012/$</from>
+	  <to>/section.jsp?section=118&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/best-companies-to-work-for/$</from>
+	  <to>/section.jsp?section=119&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-newspapers/$</from>
+	  <to>/section.jsp?section=120&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2011-12/$</from>
+	  <to>/section.jsp?section=121&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/economic-survey/$</from>
+	  <to>/section.jsp?section=122&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editorial-team/$</from>
+	  <to>/section.jsp?section=123&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag/$</from>
+	  <to>/section.jsp?section=125&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editors-pick/$</from>
+	  <to>/section.jsp?section=148&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+		<from>/big-storygandg/$</from>
+	  	<to>/section.jsp?section=152&amp;magazine=6&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/in-depth/$</from>
+	  <to>/section.jsp?section=153&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics/$</from>
+	  <to>/section.jsp?section=153&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/20-years-of-leadership/$</from>
+	  <to>/section.jsp?section=154&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-specials/$</from>
+	  <to>/section.jsp?section=155&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2012-2013/$</from>
+	  <to>/section.jsp?section=157&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2012-13/$</from>
+	  <to>/section.jsp?section=159&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/buzztop/$</from>
+	  <to>/section.jsp?section=163&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2013-14/$</from>
+	  <to>/section.jsp?section=166&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/union-budget-2013-2014/$</from>
+	  <to>/section.jsp?section=164&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2013-14/$</from>
+	  <to>/section.jsp?section=167&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/mindrush/$</from>
+	  <to>/section.jsp?section=169&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/interim-budget-2014/$</from>
+	  <to>/section.jsp?section=172&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/health-insurance/$</from>
+	  <to>/section.jsp?section=173&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/term-and-others/$</from>
+	  <to>/section.jsp?section=174&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2014-15/$</from>
+	  <to>/section.jsp?section=178&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2014-15/$</from>
+	  <to>/section.jsp?section=180&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2015-16/$</from>
+	  <to>/section.jsp?section=186&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+
+
+	<!-- Sections -->
+	<rule match-type="regex">
+	  <from>/specials$</from>
+	  <to>/section.jsp?section=124&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive$</from>
+	  <to>/section.jsp?section=124&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=124&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/top-story$</from>
+	  <to>/section.jsp?section=99&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/top-story\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=99&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/current$</from>
+	  <to>/section.jsp?section=100&amp;magazine=1&amp;issuefree=1</to>   
+	</rule> 
+	 
+	<rule match-type="regex">
+	  <from>/sectors$</from>
+	  <to>/section.jsp?section=101&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/opinion$</from>
+	  <to>/section.jsp?section=102&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/management$</from>
+	  <to>/section.jsp?section=103&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/lifestyle$</from>
+	  <to>/section.jsp?section=104&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest$</from>
+	  <to>/section.jsp?section=105&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=105&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see$</from>
+	  <to>/section.jsp?section=106&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=106&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular$</from>
+	  <to>/section.jsp?section=107&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=107&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/company-in-focus$</from>
+	  <to>/section.jsp?section=108&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/money$</from>
+	  <to>/section.jsp?section=109&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology$</from>
+	  <to>/section.jsp?section=110&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/markets$</from>
+	  <to>/section.jsp?section=111&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-mailer$</from>
+	  <to>/section.jsp?section=113&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/obamas-india-visit$</from>
+	  <to>/section.jsp?section=114&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/india-economic-summit$</from>
+	  <to>/section.jsp?section=115&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bigstory$</from>
+	  <to>/section.jsp?section=116&amp;magazine=2&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-magazine$</from>
+	  <to>/section.jsp?section=117&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2011-2012$</from>
+	  <to>/section.jsp?section=118&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/best-companies-to-work-for$</from>
+	  <to>/section.jsp?section=119&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-newspapers$</from>
+	  <to>/section.jsp?section=120&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2011-12$</from>
+	  <to>/section.jsp?section=121&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/economic-survey$</from>
+	  <to>/section.jsp?section=122&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editorial-team$</from>
+	  <to>/section.jsp?section=123&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag$</from>
+	  <to>/section.jsp?section=125&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=125&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/editors-pick$</from>
+	  <to>/section.jsp?section=148&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+		<from>/big-storygandg$</from>
+	  	<to>/section.jsp?section=152&amp;magazine=6&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/in-depth$</from>
+	  <to>/section.jsp?section=153&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics$</from>
+	  <to>/section.jsp?section=153&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics\?page=([0-9]+)$</from>
+	  <to>/section.jsp?section=153&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/20-years-of-leadership$</from>
+	  <to>/section.jsp?section=154&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-specials$</from>
+	  <to>/section.jsp?section=155&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2012-2013$</from>
+	  <to>/section.jsp?section=157&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2012-13$</from>
+	  <to>/section.jsp?section=159&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/buzztop$</from>
+	  <to>/section.jsp?section=163&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2013-14$</from>
+	  <to>/section.jsp?section=164&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/union-budget-2013-2014$</from>
+	  <to>/section.jsp?section=164&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2013-14$</from>
+	  <to>/section.jsp?section=167&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/mindrush$</from>
+	  <to>/section.jsp?section=169&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/interim-budget-2014$</from>
+	  <to>/section.jsp?section=172&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/health-insurance$</from>
+	  <to>/section.jsp?section=173&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/term-and-others$</from>
+	  <to>/section.jsp?section=174&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2014-15$</from>
+	  <to>/section.jsp?section=178&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2014-15$</from>
+	  <to>/section.jsp?section=180&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2015-16$</from>
+	  <to>/section.jsp?section=186&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	 
+	<!--  START -->
+	
+	
+	
+	<!-- Category List -->
+	<rule match-type="regex">
+	  <from>/top-story/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=top-story&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/current/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=current&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/sectors/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=sectors&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/management/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=management&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/lifestyle/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=lifestyle&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	 
+	<rule match-type="regex">
+	  <from>/specials/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=latest&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=must-see&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=most-popular&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/company-in-focus/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=company-in-focus&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/money/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=money&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/markets/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=markets&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-mailer/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=bt-mailer&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/obamas-india-visit/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=obamas-india-visit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/india-economic-summit/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=india-economic-summit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bigstory/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=bigstory&amp;category=$1&amp;magazine=2&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-magazine/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-magazine&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2011-2012/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2011-2012&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/best-companies-to-work-for/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=best-companies-to-work-for&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-newspapers/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-newspapers&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2011-12/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2011-12&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/economic-survey/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=economic-survey&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editorial-team/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=editorial-team&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-mag&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editors-pick/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=editors-pick&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/big-story-gandg/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=big-story-gandg&amp;category=$1&amp;magazine=6&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/in-depth/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/20-years-of-leadership/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=20-years-of-leadership&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-specials/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=bt-specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2012-2013/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2012-2013&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2012-13/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2012-13&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/buzztop/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=buzztop&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2013-14/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/union-budget-2013-2014/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2013-2014&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2013-14/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/mindrush/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=mindrush&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/interim-budget-2014/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=interim-budget-2014&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/health-insurance/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=health-insurance&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/term-and-others/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=term-and-others&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2014-15/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2014-15/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2015-16/([^/]*)/$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2015-16&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<!-- END -->
+
+
+
+
+	<!-- Category List -->
+	<rule match-type="regex">
+	  <from>/top-story/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=top-story&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/current/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=current&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/sectors/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=sectors&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/management/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=management&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/lifestyle/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=lifestyle&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	 
+	<rule match-type="regex">
+	  <from>/specials/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=latest&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=must-see&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=most-popular&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/company-in-focus/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=company-in-focus&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/money/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=money&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/markets/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=markets&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-mailer/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=bt-mailer&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/obamas-india-visit/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=obamas-india-visit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/india-economic-summit/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=india-economic-summit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bigstory/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=bigstory&amp;category=$1&amp;magazine=2&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-magazine/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-magazine&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2011-2012/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2011-2012&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/best-companies-to-work-for/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=best-companies-to-work-for&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-newspapers/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-newspapers&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2011-12/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2011-12&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/economic-survey/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=economic-survey&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editorial-team/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=editorial-team&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-mag&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editors-pick/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=editors-pick&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/big-story-gandg/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=big-story-gandg&amp;category=$1&amp;magazine=6&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/in-depth/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/20-years-of-leadership/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=20-years-of-leadership&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-specials/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=bt-specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2012-2013/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2012-2013&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2012-13/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2012-13&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/buzztop/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=buzztop&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2013-14/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	<rule match-type="regex">
+	  <from>/union-budget-2013-2014/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2013-2014&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2013-14/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/mindrush/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=mindrush&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/interim-budget-2014/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=interim-budget-2014&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/health-insurance/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=health-insurance&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/term-and-others/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=term-and-others&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2014-15/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2014-15/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2015-16/([^/]*)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2015-16&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	
+	
+	
+	<rule match-type="regex">
+	  <from>/top-story/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=top-story&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/current/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=current&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/sectors/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=sectors&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/management/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=management&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	<rule match-type="regex">
+	  <from>/lifestyle/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=lifestyle&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	 
+	<rule match-type="regex">
+	  <from>/specials/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/latest/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=latest&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/must-see/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=must-see&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/most-popular/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=most-popular&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/company-in-focus/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=company-in-focus&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/money/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=money&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/technology/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=technology&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/markets/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=markets&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-mailer/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=bt-mailer&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/obamas-india-visit/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=obamas-india-visit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/india-economic-summit/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=india-economic-summit&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topstory/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=topstory&amp;category=$1&amp;magazine=2&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-magazine/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-magazine&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2011-2012/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2011-2012&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/best-companies-to-work-for/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=best-companies-to-work-for&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-newspapers/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-newspapers&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2011-12/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2011-12&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/economic-survey/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=economic-survey&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editorial-team/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=editorial-team&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/exclusive/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/from-the-mag/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=from-the-mag&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/editors-pick/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=editors-pick&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/big-story-gandg/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=big-story-gandg&amp;category=$1&amp;magazine=6&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/topics/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/in-depth/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=in-depth&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/20-years-of-leadership/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=20-years-of-leadership&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/bt-specials/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=bt-specials&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2012-2013/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2012-2013&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2012-13/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2012-13&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/buzztop/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=buzztop&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2013-14/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2013-14/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2013-14&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/mindrush/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=mindrush&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/interim-budget-2014/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=interim-budget-2014&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/health-insurance/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=health-insurance&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/term-and-others/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=term-and-others&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2014-15/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/railway-budget-2014-15/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=railway-budget-2014-15&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/union-budget-2015-16/([^/]*)\?page=([0-9]+)$</from>
+	  <to>/categorylist.jsp?sectionName=union-budget-2015-16&amp;category=$1&amp;magazine=1&amp;issuefree=1</to>   
+	</rule>
+	
+	<!-- Modified dated on 12 May 2015-->
+	
+	
+	<rule match-type="regex">
+	  <from>/moneytoday$</from>  
+	  <to>/archive_single.jsp?magazineName=mt</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/moneytoday\?page=([0-9]+)$</from>
+	  <to>/archive_single.jsp?magazineName=mt</to>
+	</rule>
+	
+	
+	<rule match-type="regex">
+	  <from>/gadgets$</from>  
+	  <to>/gadgetsngizmos.jsp?magazineName=gng</to>
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/gadgets\?page=([0-9]+)$$</from>  
+	  <to>/gadgetsngizmos.jsp?magazineName=gng</to>
+	</rule>
+	
+	<!-- http://www.gadgetsngizmos.in/ -->
+	<rule match-type="regex">
+	  <from>/tech$</from>  
+	  <to>/gadgetsandgizmos.jsp</to>
+	</rule>
+
+
+<!-- http://businesstoday.intoday.in/moneytoday.html -->
+
+
+	<!-- moneytodayarchive -->
+	<rule match-type="regex">
+		<from>/archive/([^/]*)$</from>  
+	  	<to>/mtarchive.jsp</to>
+	</rule>
+	
+	<rule match-type="regex">
+		<from>/archive/([^/]*)\?page=([0-9]+)$</from>  
+	  	<to>/mtarchive.jsp</to>
+	</rule>
+	
+	<!-- auto/category-name 
+	<rule match-type="regex">
+	  <from>auto/([^/]*)/$</from>
+	  <to>/story.jsp?catname=$1</to>   
+	</rule>
+	<rule match-type="regex">
+	  <from>auto/([^/]*)$</from>
+	  <to>/story.jsp?storyid=$1&apgeno=$2&amp;sefurl=$3</to>   
+	</rule>
+	-->
+	
+	
+	
+	<!-- bt/story/story-id/pagenum/sefurl.html -->
+	<rule match-type="regex">
+	  <from>([^/]*)/story/([0-9]+)/([0-9]+)/([^/]*).html</from>
+	  <to>/story.jsp?storyid=$2&amp;pageno=$3&amp;sefurl=$4</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/([^/]*)/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;subcategory=$3&amp;sef=$4&amp;storyid=$5</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/([^/]*)/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;category=$2&amp;sef=$3&amp;storyid=$4</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/([^/]*)/([^/]*)/story/([0-9]+).html</from>
+	  <to>/story.jsp?section=$1&amp;sef=$2&amp;storyid=$3</to>   
+	</rule>
+	
+	
+	
+	 
+	<rule match-type="regex">
+	  <from>/casestudy$</from>
+	  <to>/casestudy.jsp?sectionname=case-studies</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/casestudy/$</from>
+	  <to>/casestudy.jsp?sectionname=case-studies</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/case-studies$</from>
+	  <to>/casestudy.jsp?sectionname=case-studies</to>   
+	</rule>
+	
+	<rule match-type="regex">
+	  <from>/case-studies/$</from>
+	  <to>/casestudy.jsp?sectionname=case-studies</to>   
+	</rule>
+
+</urlrewrite>
+
+

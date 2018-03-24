@@ -1,0 +1,380 @@
+<%@ taglib uri="http://www.opensymphony.com/oscache" prefix="cache" %>
+<%@page language="java" import="java.net.*, java.util.ArrayList, com.itgd.utils.*, com.itgd.dto.StoryDTO, com.itgd.dto.ContentListDTO, com.itgd.dto.RelatedContentDTO, com.itgd.helper.StoryHelper"%>
+<%@include file="global_include.jsp"%>
+<%
+String baseUrl = request.getRequestURL().substring(0,request.getRequestURL().indexOf(request.getServletPath()))+"/";	
+
+//System.out.println("Story Page - "+baseUrl);
+int id=0;
+int currentPageNumber=1;
+int issueId=0;
+int settSecId=0;
+String issueDate="";
+if(request.getAttribute("storyId")!=null)
+	id = (Integer)request.getAttribute("storyId");
+if(request.getAttribute("currentPageNumber")!=null)
+	currentPageNumber = (Integer)request.getAttribute("currentPageNumber");
+
+//System.out.println("Story Page -- " + id);
+String storybody="";
+String primaryCategory = "0";
+%>
+<cache:cache key="<%=SITE_URL+"story/"+currentPageNumber+"/"+id%>" scope="application " time="600" refresh="t" >
+
+
+
+<%
+ArrayList storyData = (ArrayList) StoryHelper.storyDetail(id, 1);
+//out.println("storyData.size()->"+storyData.size());
+
+
+if (storyData != null && storyData.size() > 0) {
+	for (int i = 0; i < storyData.size(); i++) {
+		StoryDTO aDTO = (StoryDTO) storyData.get(i);
+			storybody=aDTO.getFullDescription();
+			ArrayList resultPreviousNext = (ArrayList) StoryHelper.GetNextPreviousArticle(aDTO.getPrimaryCategory().replaceAll("#","~"), id);
+			String previousLabel="";
+			String nextLabel="";
+%>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@include file="googleanalytics_top.jsp"%>
+<html>
+<head>
+  <base href="<%=baseUrl%>"/>
+<META http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title><%=aDTO.getTitleAlias()%></title>
+<meta name="description" content="<%=aDTO.getMetaDescription().replaceAll("\\<.*?>","")%>" />
+<meta name="keywords" content="<%=aDTO.getMetaKeyword().replaceAll("\\<.*?>","")%> " />
+<link rel="stylesheet" href="css/mobile.css" type="text/css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<meta name="viewport" id="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;"></meta>
+<%if(id==208174){
+%>
+<script type="text/javascript">
+window.location.href = "http://businesstoday.intoday.in<%=request.getAttribute("javax.servlet.forward.request_uri").toString().replace("//story","/story")%>";
+</script>
+<%}else if(request.getAttribute("javax.servlet.forward.request_uri")!=null){ %>
+<link rel="canonical" href="http://businesstoday.intoday.in<%=request.getAttribute("javax.servlet.forward.request_uri").toString().replace("//story","/story")%>" />
+<script type="text/javascript">
+function canonicalUrlRedirection() {
+	//if (window.innerWidth > 985) {
+		var canonicalUrl = "";
+		var links = document.getElementsByTagName("link");
+		for (var i = 0; i < links.length; i ++) {
+			if (links[i].getAttribute("rel") == "canonical") {
+				canonicalUrl = links[i].getAttribute("href");
+				break;
+			}
+		}
+		if (canonicalUrl != "") {
+			window.location.href = canonicalUrl;
+		}
+	//}
+}
+ var mobile = (/iphone|vnd.wap.xhtml+xml|sony|symbian|S60|SymbOS|nokia|samsung|mobile|windows ce|epoc|opera mini|nitro|j2me|midp-|cldc-|netfront|mot|up.browser|up.link|audiovox|blackberry|ericsson|panasonic|philips|sanyo|sharp|sie-|portalmmm|blazer|avantgo|danger|palm|series60|palmsource|pocketpc|smartphone|rover|ipaq|au-mic|alcatel|ericy|vodafone|wap1|wap2|teleca|playstation|lge|lg-|android|htc|dream|webos|bolt|nintendo|palm/i.test(navigator.userAgent.toLowerCase()));
+              if (!mobile) {             
+                 canonicalUrlRedirection(); 
+              }
+</script>
+
+
+<%} %>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+    po.src = "https://apis.google.com/js/plusone.js?publisherid=117119850068103661951";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({article:'auto'});
+!function (e, f, u) {
+e.async = 1;
+e.src = u;
+f.parentNode.insertBefore(e, f);
+}(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/indiatoday-network/loader.js');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"
+    style="display:none"
+    data-ad-client="ca-google"
+    data-reactive-ad-format="1"
+    data-ad-channel=”3679332217”></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</head>
+<body>
+<%@ include file="topnav.jsp"%>
+<div style="height:8px;"></div>
+<div align="center" style="width:300px;margin:0px auto"> <%@include file="top_add.jsp" %> </div>
+
+<div id="dispscrolltext" style="width:100%; text-align:center"> 
+         <a href="http://goo.gl/YGfJHv" target="_blank" rel="nofollow"><img src="http://media2.intoday.in/aajtak/itg_ucweb.png"/><u><span id="myQuote" style="color:#000; padding-left:7px;"></span></u></a>
+       
+        <script language="javascript">
+        var myQuotes = new Array();
+        myQuotes[0] = "Download world's Fastest UC Browser-FREE";
+        myQuotes[1] = "Catch Live Scores on UC Browser! Download Now!!";
+        myQuotes[2] = "Best News Reading Experience! Click to Download UC Browser";
+        myQuotes[3] = "Catch latest Bollywood Gossip on UC Browser! Click to Download";
+        myQuotes[4] = "Download Free Music & Video! Click to Download UC Browser";
+        var myRandom = Math.floor(Math.random()*myQuotes.length);        
+        $('#myQuote').html(myQuotes[myRandom]);
+        </script> 
+</div>
+
+<div style="height:5px;"></div>
+
+	<table cellpadding="0" cellspacing="0" width="100%">
+	<tr><td class="breadcrumb"> <a href="<%=SITE_URL%>">Home</a> &raquo;
+	<%
+			out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.sectionURL(aDTO.getSectionSefTitle(), 1, aDTO.getSectionId())+"\">"+aDTO.getSectionTitle()+"</a> &raquo;");
+			if(aDTO.getPrimaryCategoryLength() >= 2) {	
+					out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.categoryURL(aDTO.getCategorySefTitle(), 1, aDTO.getCategoryId())+"\">"+ aDTO.getCategoryTitle()+"</a> &raquo;");
+			} 
+			if(aDTO.getPrimaryCategoryLength() >= 3) {	
+					out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.subCategoryURL(aDTO.getSubCategorySefTitle(), 1, aDTO.getSubCategoryId())+"\">"+ aDTO.getSubCategoryTitle()+"</a> &raquo;");
+			} 
+			if(aDTO.getPrimaryCategoryLength() == 4) {	
+					out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.subSubCategoryURL(aDTO.getSubSubCategorySefTitle(), 1, aDTO.getSubSubCategoryId())+"\">"+ aDTO.getSubSubCategoryTitle()+"</a> &raquo;");
+			}
+
+	
+%>
+Story</td></tr>
+
+      	 <% if (!aDTO.getCourtesy().equals("")){ %>
+			<tr><td  valign="top" style="padding:5px 0 0 2px;"><div style="font:normal 12px Arial;  text-align:left;">&nbsp;Courtesy: <span class="courtesy"><%=aDTO.getCourtesy().replaceAll("\\<.*?>","") %></span></div></td></tr>
+		<%} %>
+          <tr><td class="storyHeadline"><%=aDTO.getTitleAlias()%></td></tr>
+
+	<%if(aDTO.getByline().trim().length() > 0 || aDTO.getCity().trim().length() > 0 || aDTO.getCreatedDate().trim().length() > 0) { 
+			out.print("<tr><td class='storystrap'>");	 
+			if(aDTO.getByline().trim().length() > 0)
+				out.print(aDTO.getByline());	 
+			if(aDTO.getCity().trim().length() > 0 || aDTO.getCreatedDate().trim().length() > 0) { 
+				if(aDTO.getByline().trim().length() > 0)
+					out.print("<br>");	 
+				out.print("<span style='color:#9e9e9e'>");
+				if(aDTO.getCity().trim().length() > 0) {
+					out.print(aDTO.getCity());	
+				}
+				if(aDTO.getCreatedDate()!=null && !aDTO.getCreatedDate().equals("")){ 
+					if(aDTO.getCity().trim().length() > 0) {
+						out.print(", ");
+					}
+					if(aDTO.getIssueId()>0) {
+		out.println("Edition:"+aDTO.getIssueDate());
+	}else{
+					out.print(aDTO.getCreatedDate()+" | "+aDTO.getCreatedTime()+" IST");
+					}
+				}
+				out.print("</span>");
+			}
+		}%>
+</td></tr>         
+<tr><td>    
+ 
+		<iframe scrolling="no"  width="52px;" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; height:25px;" src="http://www.facebook.com/plugins/like.php?href=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;layout=button&amp;show_faces=true&amp;&amp;width=20&amp;action=like&amp;font&amp;colorscheme=light&amp;height=25"></iframe>	
+			
+			 <!--<g:plusone size="medium"></g:plusone>-->
+		<iframe scrolling="no" frameborder="0" class="frame" src="https://apis.google.com/_/+1/fastbutton?bva&amp;url=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>" style="border:none; overflow:hidden; height:34px; width:53px;" allowtransparency="true"></iframe>
+		
+		<iframe scrolling="no" width="60px;" frameborder="0" data-twttr-rendered="true" title="Twitter Tweet Button" style="height: 25px;" class="twitter-share-button twitter-count-vertical" src="http://platform.twitter.com/widgets/tweet_button.1346833764.html#_=1346847881207&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;size=m&amp;text=<%=aDTO.getTitleAlias() %>%20-%20Business%20Today&amp;url=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;via=bt_india&amp;count=none" allowtransparency="true"></iframe>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			
+	
+        
+          
+</td></tr>
+          <tr><td height="5"></td></tr>
+<%if (resultPreviousNext != null && resultPreviousNext.size() > 0) {
+	out.print("<tr><td><div style='width:100%; text-align:center;'><div class='nptitle'>");
+	for (int counterPreArticle = 0; counterPreArticle < resultPreviousNext.size(); counterPreArticle++) {
+		ContentListDTO stBean = (ContentListDTO) resultPreviousNext.get(counterPreArticle);
+		if(stBean.getContentType().equals("previous")) {
+			out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.storyURL(stBean.getSefTitle(),1, stBean.getId())+"\"><img src='images/back.gif' alt='Back' width='27' height='27' hspace='5' border='0' align='left' ></a>");
+		}
+		if(counterPreArticle==0)
+			out.print("<a href=\""+SITE_BASEPATH+"\">HOME</a>");
+
+		if(stBean.getContentType().equals("next")) {
+			out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.storyURL(stBean.getSefTitle(),1, stBean.getId())+"\"><img src='images/next.gif' alt='Back' width='27' height='27' hspace='5' border='0' align='right'></a>");
+		}
+	}
+	out.print("</div></div></td></tr>");
+}%>
+		            
+<% if(aDTO.getLargeKickerImage()!=null && !aDTO.getLargeKickerImage().equals("")) { 
+		out.print("<tr><td align='center'><img src=\""+STORY_IMAGE_BASEPATH+aDTO.getLargeKickerImage()+"\" width='325' height='170' border='0' align='middle' alt=\""+aDTO.getLargeKickerImageAltText()+"\" title=\""+aDTO.getLargeKickerImageAltText()+"\" />");
+		if(aDTO.getLargeKickerImageCaption().trim().length() > 0) 
+			out.print("<div align='center' style='text-align:left; padding:2px 3px;font:normal 11px arial; color:##9E9E9E;width:325px;background-color:#F5F5F5;' class='dtime'>"+aDTO.getLargeKickerImageAltText()+"</div>");
+         out.print("</td></tr><tr><td height='5'></td></tr>");
+		
+ } %>
+
+          <tr><td class="storytext">
+		  <%
+		  if(id==130599 || id==130980) {
+	int HighlightNum = 0;
+	String tempArticle = "";
+	//storybody=storybody.replaceAll("\\{table\\}","").replaceAll("\\{mosimage\\}","").replaceAll("\\{blurb\\}","").replaceAll("\\{quote\\}","").replaceAll("\\{mospagebreak\\}","");
+	if(storybody.indexOf("Highlight")>0) {
+		int tempH = storybody.indexOf("Highlight");
+		int tempC = storybody.indexOf(":");
+		String t1 = storybody.substring((storybody.indexOf("Highlight")+9), storybody.indexOf(":"));
+		HighlightNum = Integer.parseInt(t1);
+	}
+	tempArticle = storybody;
+	for(int z=HighlightNum, z1=1; z>=1; z--, z1++) {
+		String tempAa = "Highlight"+z;
+		String tempAa1 = ""+z;
+		tempArticle = tempArticle.replaceAll(tempAa, tempAa1);
+	}
+	out.println(tempArticle.replaceAll("#","").replaceAll( "<br /><br /><br /><br />", "<br /><br />" ).replaceAll( "<br /><br /><br />", "<br /><br />"));
+} else {
+	  out.print(storybody.replaceAll("http://businesstoday.intoday.in/",SITE_URL).replaceAll( "<br /><br /><br /><br />", "<br /><br />" ).replaceAll( "<br /><br /><br />", "<br /><br />"));
+}
+
+
+		  %></td></tr>
+
+<tr><td height="5"></td></tr>
+<%if (resultPreviousNext != null && resultPreviousNext.size() > 0) {
+	out.print("<tr><td><div style='width:100%; text-align:center;'><div class='nptitle'>");
+	for (int counterPreArticle = 0; counterPreArticle < resultPreviousNext.size(); counterPreArticle++) {
+		ContentListDTO stBean = (ContentListDTO) resultPreviousNext.get(counterPreArticle);
+		if(stBean.getContentType().equals("previous")) {
+			out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.storyURL(stBean.getSefTitle(),1, stBean.getId())+"\"><img src='images/back.gif' alt='Back' width='27' height='27' hspace='5' border='0' align='left' ></a>");
+		}
+		if(counterPreArticle==0)
+			out.print("<a href=\""+SITE_BASEPATH+"\">HOME</a>");
+
+		if(stBean.getContentType().equals("next")) {
+			out.print("<a href=\""+SITE_BASEPATH+CommonFunctions.storyURL(stBean.getSefTitle(),1, stBean.getId())+"\"><img src='images/next.gif' alt='Back' width='27' height='27' hspace='5' border='0' align='right'></a>");
+		}
+	}
+	out.print("</div></div></td></tr>");
+}%>
+
+<tr><td height="5"></td></tr>
+<tr><td>
+
+<div id="dispscrolltext" style="width:100%; text-align:center"> 
+         <a href="http://goo.gl/YGfJHv" target="_blank" rel="nofollow"><img src="http://media2.intoday.in/aajtak/itg_ucweb.png"/><u><span id="myQuote2" style="color:#000; padding-left:7px;"></span></u></a>
+       
+        <script language="javascript">
+        var myQuotes = new Array();
+        myQuotes[0] = "Download world's Fastest UC Browser-FREE";
+        myQuotes[1] = "Catch Live Scores on UC Browser! Download Now!!";
+        myQuotes[2] = "Best News Reading Experience! Click to Download UC Browser";
+        myQuotes[3] = "Catch latest Bollywood Gossip on UC Browser! Click to Download";
+        myQuotes[4] = "Download Free Music & Video! Click to Download UC Browser";
+        var myRandom = Math.floor(Math.random()*myQuotes.length);        
+        $('#myQuote2').html(myQuotes[myRandom]);
+        </script> 
+</div>
+
+</td></tr>
+<tr><td>
+    <%
+
+		ArrayList relateds = (ArrayList) CommonFunctions.relatedContent(""+id, "text", 0);
+	if (relateds != null && relateds.size() > 0) {
+		for (int rCtr = 0; rCtr < relateds.size(); rCtr++) {
+			RelatedContentDTO RCD = (RelatedContentDTO) relateds.get(rCtr);
+				if(rCtr==0)
+					out.print("  <table cellpadding='0' cellspacing='0' width='100%'><tbody><tr><td height='22' class='subheading'><a class='subheading' href=\"section?secid=120\" style='color:#333;'>Related News</a></td></tr>");
+					if(RCD.getRelatedType().trim().equals("text"))	{			
+		%>
+			<tr><td bgcolor="#FFFFFF" style="border-bottom:1px solid #DBDBDB;">
+			<%if(RCD.getImage().trim().length() > 0) {%>
+					<a href="<%=SITE_BASEPATH+CommonFunctions.storyURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><img src="<%=STORY_IMAGE_BASEPATH+RCD.getImage().trim()%>" width="80" height="80" align="left" style="margin:0 8px 0 2px; border:0;"/></div>
+			<% } else {%>
+					<a href="<%=SITE_BASEPATH+CommonFunctions.storyURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><img src="<%=NO_IMG_88x66%>" width="80" height="80" align="left" style="margin:0 8px 0 2px; border:0;"/></a>
+			<% }%>
+			<div class="story-title"><a href="<%=SITE_BASEPATH+CommonFunctions.storyURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><%=RCD.getRelatedTitle()%></a></div></td></tr>
+		<%		} else if(RCD.getRelatedType().trim().equals("photo"))	{	%>
+			<tr><td bgcolor="#FFFFFF" style="border-bottom:1px solid #DBDBDB;">
+			<%if(RCD.getImage().trim().length() > 0) {%>
+				<div class="strimgrepeat">
+				<a href="<%=SITE_BASEPATH+CommonFunctions.galleryURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><img src="<%=PHOTO_BASEPATH+RCD.getImage().trim()%>" width="80" height="80" align="left" style="margin:0 8px 0 2px; border:0;"/><span class="strphotoicon"></span></a></div>
+			<% } else {%>
+					<a href="<%=SITE_BASEPATH+CommonFunctions.galleryURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><img src="<%=NO_IMG_88x66%>" width="80" height="80" align="left" style="margin:0 8px 0 2px; border:0;"/></a>
+			<% }%>
+			<div class="story-title"><a href="<%=SITE_BASEPATH+CommonFunctions.galleryURL(RCD.getRelatedContentSefTitle(), 1, RCD.getRelatedContentId())%>"><%=RCD.getRelatedTitle()%></a></div>
+			</td></tr>
+		<%			
+					}
+		
+			if(rCtr == relateds.size()-1)
+				out.print("</tbody></table>");
+
+		}
+	}
+	%>
+
+
+</td></tr>
+<tr><td>    
+ 
+		<iframe scrolling="no"  width="52px;" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; height:25px;" src="http://www.facebook.com/plugins/like.php?href=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;layout=button&amp;show_faces=true&amp;&amp;width=20&amp;action=like&amp;font&amp;colorscheme=light&amp;height=25"></iframe>	
+			
+			 <!--<g:plusone size="medium"></g:plusone>-->
+		<iframe scrolling="no" frameborder="0" class="frame" src="https://apis.google.com/_/+1/fastbutton?bva&amp;url=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>" style="border:none; overflow:hidden; height:34px; width:53px;" allowtransparency="true"></iframe>
+		
+		<iframe scrolling="no" width="60px;" frameborder="0" data-twttr-rendered="true" title="Twitter Tweet Button" style="height: 25px;" class="twitter-share-button twitter-count-vertical" src="http://platform.twitter.com/widgets/tweet_button.1346833764.html#_=1346847881207&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;size=m&amp;text=<%=aDTO.getTitleAlias() %>%20-%20Business%20Today&amp;url=<%=SITE_BASEPATH+CommonFunctions.storyURL(aDTO.getSefTitle(),1, aDTO.getId()) %>&amp;via=bt_india&amp;count=none" allowtransparency="true"></iframe>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			
+	
+        
+          
+</td></tr>
+<tr><td>
+<div id='taboola-mobile-below-article-thumbs'></div>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({mode:'thumbs-mobile-2r', container:'taboola-mobile-below-article-thumbs', placement:'mobile-below-article-thumbs'});
+</script>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({flush:true});
+</script>
+ <div style="height:5px;"></div>
+ <div align="center" style="width:300px;margin:0px auto"> <%@include file="story_bottom_add.jsp" %> </div> 
+
+</td></tr>
+<tr><td height="8"></td></tr>
+<%	if(aDTO.getSectionId()==120){	%>
+         <tr><td><div style="padding-left:5px;"> More from &nbsp;<a href="<%=SITE_BASEPATH+CommonFunctions.sectionURL("latest-headlines", 1, 175)%>" class="storynormaltxt"><strong>LATEST HEADLINES</strong></a></div></td></tr>
+<%	} else { %>
+      <tr><td><div style="padding-left:5px;"> More from &nbsp;<a href="<%=SITE_BASEPATH+CommonFunctions.sectionURL(aDTO.getSectionSefTitle(), 1, aDTO.getSectionId())%>" class="storynormaltxt"><strong><%=aDTO.getSectionTitle()%></strong></a></div></td></tr>
+<% }%>
+
+<tr><td height="8"></td></tr>
+      </table>
+<div style="float:left; width:100%"><%@ include file="othercategories.html"%></div>
+<div style="float:left; width:100%"><%@include file="hotzone.html"%></div>
+<div style="float:left; width:100%"><%@include file="ringtones.html"%></div>
+<div style="float:left; width:100%"><%@ include file="bottomnav.html"%></div> 
+<div style="float:left; width:100%"><%@include file="googleanalytics_bottom.jsp"%></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<%
+	}
+} else {
+	String redirectURL = SITE_BASEPATH + "pagenotfound.jsp";
+	response.sendRedirect(redirectURL);
+}
+%>
+</cache:cache>
+

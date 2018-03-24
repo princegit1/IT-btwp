@@ -1,0 +1,62 @@
+<%
+String URL1 = request.getRequestURI();
+String add_tempvar="";
+int add_categoryid=0;
+if(request.getAttribute("add_categoryid")!=null)
+{
+add_categoryid=(Integer)request.getAttribute("add_categoryid"); 
+//out.println("------------>"+add_categoryid);
+}
+if(URL1.matches("/index.jsp") || URL1.matches("/"))  
+{
+%>
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT WAP Richmedia , publisher: Bussiness Today WAP , Ad Dimension: Intromercial - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="2136"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="33";
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT WAP Richmedia , publisher: Bussiness Today WAP , Ad Dimension: Intromercial - 1 x 1 -->
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT Homepage Top , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="1524/1272"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="51"; var zflag_ct="criteo:"+crtg_content;
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT Homepage Top , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+
+
+
+
+<% } else { if((request.getRequestURI().contains("section.jsp") ||request.getRequestURI().contains("story.jsp")||request.getRequestURI().contains("category.jsp")) && (add_categoryid==110 || add_categoryid==57|| add_categoryid==58|| add_categoryid==59|| add_categoryid==60|| add_categoryid==72  )){%>
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BusinessToday_Technology_FordNokia , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="2314"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="51"; 
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BusinessToday_Technology_FordNokia , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+
+<%}else{%>
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT WAP Richmedia ROS , publisher: Bussiness Today WAP , Ad Dimension: Logo - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="2242"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="83"; 
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT WAP Richmedia ROS , publisher: Bussiness Today WAP , Ad Dimension: Logo - 1 x 1 -->
+
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT ROS Top , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="1532/1272"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="51"; var zflag_ct="criteo:"+crtg_content;
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT ROS Top , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+
+
+
+<% }} %>

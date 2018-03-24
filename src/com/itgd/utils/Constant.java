@@ -1,0 +1,116 @@
+package com.itgd.utils;
+
+
+public class Constant
+{
+
+    public static final int BT_SITE_ID = 1;
+    public static final int MT_SITE_ID = 2;
+    public static final String SITE_URL = "http://alpham.businesstoday.in/";
+    public static final String PAGE_NOT_FOUND = "http://alpham.businesstoday.in/pagenotfound.jsp";
+    public static final String cacheURL = "http://alpham.businesstoday.in/";
+    public static final int LISTING_PAGE_DISP_LIMIT = 5;
+    public static final int SECTION_CONTENT_LIMIT = 8;
+    public static final int CONTENT_FEEDBACK_CONTENT_LIMIT = 10;
+    public static final int CATEGORY_CONTENT_LIMIT = 8;
+    public static final int ARCHIVES_SINGLE_CONTENT_LIMIT = 16;
+    public static final String CSS_PATH = "css/";
+    public static final String JS_PATH = "js/";
+    public static final String IMG_PATH_STATIC = "images/";
+    public static final String IMG_PATH_STORY = "http://media2.intoday.in/btmt/images/stories/";
+    public static final String STORY_IMG_PATH = "http://media2.intoday.in/btmt/images/stories/";
+    public static final String KICKER_IMG_PATH = "http://media2.intoday.in/btmt/images/stories/";
+    public static final String PHOTO_GALLERY_PATH = "http://media2.intoday.in/btmt/images/Photo_gallery/";
+    public static final String IT_KICKER_IMG_PATH = "http://media2.intoday.in/indiatoday/images/stories/";
+    public static final String STORY_PAGE_PRINT = "/story_print.jsp";
+    public static final String STORY_PAGE = "/story.jsp";
+    public static final String SECTION_PAGE = "/section.jsp";
+    public static final String SECTION_LISTING_PAGE = "/sectionlist.jsp";
+    public static final String CATEGORY_PAGE = "/category.jsp";
+    public static final String CATEGORY_LISTING_PAGE = "/categorylist.jsp";
+    public static final String MORE_CONTENT_PAGE = "/moreContent.jsp";
+    public static final String PAGE_NOT_FOUND_PAGE = "/pagenotfound.jsp";
+    public static final String CONTENT_FEEDBACK = "/contentfeedback.jsp";
+    public static final String CONTENT_FEEDBACK_SERVLET = "contentfeedback";
+    public static final String ARCHIVES_SERVLET = "archive";
+    public static final String ARCHIVES = "/archive.jsp";
+    public static final String ARCHIVES_SINGLE = "/archive_single.jsp";
+    public static final String ISSUE = "/issue.jsp";
+    public static final String PHOTO_SECTION_PAGE = "/photosection.jsp";
+    public static final String PHOTO_PLAY_PAGE = "/photoplaytest.jsp";
+    public static final String PHOTO_PLAY_SERVLET = "photoplay";
+    public static final String PHOTO_SECTION_SERVLET = "photosection";
+    public static final String SITE_NAME_BT = "Business Today";
+    public static final String SITE_NAME_MT = "Money Today";
+    public static final String STORY_SERVLET = "story";
+    public static final String VIDEO_PLAY_SERVLET = "videoplay";
+    public static final int BTMORELIMIT = 5;
+    public static final int BTMOREARTICLELIMIT = 10;
+    public static final int BTMORESECTIONID = 2;
+    public static final String VIDEO_PAGE = "/video.jsp";
+    public static final String VIDEO_LIST = "/videolist.jsp";
+    public static final String VIDEO_SUBLIST = "/videosublist.jsp";
+    public static final String VIDEO_SECTION = "/videosection.jsp";
+    public static final int VIDEO_SECTIONID = 161;
+    public static final String VIDEO_PATH = "http://media1.itgo.in/indiatoday/video/";
+    public static final String IMG_PATH_STATIC_COMMON = "static/common/";
+    public static final int MORE_COMMENT_CONTENT_LIMIT = 4;
+    public static final String MORECOMMENT_SERVLET = "morecomment";
+    public static final String BUSINESSTODAY_IMG_PATH = "http://media2.intoday.in/btmt/images/stories/";
+    public static final String MONEYTODAY_IMG_PATH = "http://media2.intoday.in/btmt/images/stories/";
+    public static final String MORECOMMENT = "/morecomments.jsp";
+    public static final String MARKET_SECTION_PAGE = "/markets.jsp";
+    public static final String AUTHOR_PAGE = "/author/index.jsp";
+    public static final String SECTION = "section";
+    public static final String CATEGORY = "category";
+    public static final String SUBCATEGORY = "subcategory";
+    public static final String SUBSUBCATEGORY = "subsubcategory";
+    public static final String DATE = "date";
+    public static final String DOT = ".";
+    public static final String ORDERING = "ordering";
+    public static final String MT = "mt";
+    public static final String MTMORE = "mtmore";
+    public static final String BTMORE = "btmore";
+    public static final String ISSUESTR = "issue";
+    public static final String BT = "bt";
+    public static final String TEXT = "text";
+    public static final String GANDG = "G&G";
+    public static final String MARKETS = "markets";
+    public static final String GADGETSNGIZMOS = "gadgetsngizmos";
+    public static final String GADGETSANDGIZMOS = "gadgetsandgizmos";
+    public static final String GADGETS = "gadget";
+    public static final String ZERO = "0";
+    public static final String ONE = "1";
+    public static final String TWO = "2";
+    public static final String SIX = "6";
+    public static final String PHOTO = "photo";
+    public static final String PHOTOS = "photos";
+    public static final String HASH = "#";
+    public static final String TILD = "~";
+    public static final String VIDEO = "video";
+    public static final String VIDEOS = "videos";
+    public static final String ARCHIVE = "archive";
+    public static final String MONEYTODAYARCHIVE = "moneytodayarchive";
+    public static final String MONEYTODAY = "moneytoday";
+    public static final String MAGAZINE = "magazine";
+    public static final String EMPTY = "";
+    public static final String BUDGET = "budget";
+    public static final String COMMA = ",";
+    public static final String TOPSTORY = "top-story";
+    public static final String LATEST = "latest";
+    public static final String SPECIAL = "special";
+    public static final String SPECIALS = "specials";
+    public static final String INDEPTH = "in depth";
+    public static final String TOPICS = "topics";
+    public static final String SPACE = " ";
+    public static final String MINUS = "-";
+    public static final String EXCLUSIVE = "exclusive";
+    public static final String FORWARDSLASH = "/";
+    public static final String HTML = ".html";
+    public static final String QUESTIONMARK = "?";
+    public static final String STORY = "story";
+ 
+    public Constant()
+    {
+    }
+}

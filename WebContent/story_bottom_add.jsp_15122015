@@ -1,0 +1,40 @@
+<%
+if(request.getRequestURI().matches("/index.jsp") || request.getRequestURI().matches("/"))  
+{
+%>
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT Homepage Bottom , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="1527/1272"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="51"; var zflag_ct ="criteo:"+crtg_content+"
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT Homepage Bottom , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+
+<% } else { %>
+
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  BT ROS Bottom , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="821"; var zflag_cid="1535/1272"; var zflag_sid="9"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="51"; var zflag_ct ="criteo:"+crtg_content+"^ viz320x50:" + vizPAM.isVizInterested("320x50")['int'];
+</script>
+<script language="JavaScript" src="http://d2.zedo.com/jsc/d2/fo.js"></script>
+<!-- end ZEDO for channel:  BT ROS Bottom , publisher: Bussiness Today WAP , Ad Dimension: WAP - 1 x 1 -->
+
+<% } %>
+
+<%
+//out.print("@@@@@@@@@"+request.getRequestURI());
+if (request.getRequestURI().matches("/story/")|| request.getRequestURI().matches("/story.jsp")|| request.getRequestURI().matches("/gallery.jsp")||request.getRequestURI().matches("/gallery/")||request.getRequestURI().matches("/video.jsp")||request.getRequestURI().matches("/video/")) 
+{%>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AdSense New Backfill 300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3793720534573472"
+     data-ad-slot="9067364618"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<%}%>  
+
+

@@ -1,0 +1,447 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Arial
+}
+A {
+	FONT-SIZE: 14px; COLOR: #004990; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 14px; COLOR: #004990; TEXT-DECORATION: underline
+}
+IMG A {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+IMG A:hover {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 12px; BACKGROUND: url(images/blue_squire_bullet.jpg) no-repeat left 7px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px georgia; COLOR: #004990; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; _background: url(images/blue_squire_bullet.jpg) no-repeat left 5px
+}
+.lft {float:left}
+#mob IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.mobile {
+	FONT: bold 16px arial; COLOR: #ffffff; PADDING-TOP: 10px
+}
+.topright {
+	PADDING-RIGHT: 2px; MARGIN-TOP: 0px; FLOAT: right; FONT: 10px arial; COLOR: #ffffff
+}
+.dtime {
+	FONT: bold 11px arial; COLOR: #666666; PADDING-TOP: 3px
+}
+.textbox {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; MARGIN: 1px; FONT: 12px arial; BORDER-LEFT: #666666 1px solid; WIDTH: 100px; COLOR: #a5a1a2; BORDER-BOTTOM: #666666 1px solid
+}
+INPUT.send_button {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(images/go-bg.gif) repeat-x left top; BORDER-BOTTOM-WIDTH: 0px; FONT: 12px arial; WIDTH: 20px; COLOR: #ffffff; HEIGHT: 20px; BORDER-RIGHT-WIDTH: 0px; outline: none
+}
+.subheading {
+	PADDING-LEFT: 2px; FONT: bold 14px/18px Arial; TEXT-TRANSFORM: uppercase; COLOR: #ffffff
+}
+.subheading A {
+	PADDING-LEFT: 2px; FONT: bold 14px/18px Arial; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.subheading A:hover {
+	PADDING-LEFT: 2px; FONT: bold 14px/18px Arial; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.subheading_hot {
+	PADDING-LEFT: 2px; FONT: bold 12px/18px Verdana; TEXT-TRANSFORM: uppercase; COLOR: #dd1920
+}
+.txtredcolor {font-family:Arial;font-size:12px; color:#2c8a03; font-weight:bold}
+.txtredcolor a{font-family:Arial;font-size:12px; color:#000000; text-decoration:none;}
+.txtredcolor a:hover{font-family:Arial;font-size:12px; color:#000000; text-decoration:underline;}
+.hot_download {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; FONT: 11px/14px Arial; COLOR: #ffffff; PADDING-TOP: 5px
+}
+.subheading_new {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; TEXT-TRANSFORM: uppercase; COLOR: #ffffff
+}
+.subheading_new A {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.subheading_new A:hover {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.subheading_IT {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; COLOR: #000000
+}
+.subheading_IT A {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; COLOR: #000000; TEXT-DECORATION: none
+}
+.subheading_IT A:hover {
+	PADDING-LEFT: 2px; FONT: bold 12px Verdana; COLOR: #000000; TEXT-DECORATION: underline
+}
+#breakingC {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.breakingH {
+	FONT: bold 12px arial; TEXT-TRANSFORM: uppercase; COLOR: #b10f0a
+}
+.breakingTXT {
+	PADDING-LEFT: 5px; FONT: 11px arial; COLOR: #000000
+}
+.breakingTXT A {
+	FONT: 11px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.breakingTXT A:hover {
+	FONT: 11px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.mobnormaltxt {
+	FLOAT: left; FONT: 12px/18px arial; COLOR: #cc0000
+}
+.mobnormaltxt A {
+	COLOR: #004990; TEXT-DECORATION: none
+}
+.mobnormaltxt A:hover {
+	COLOR: #004990; TEXT-DECORATION: underline
+}
+.storynormaltxt {
+	FONT: bold 12px/18px arial; COLOR: #004990
+}
+.storynormaltxt A {
+	COLOR: #d71920; TEXT-DECORATION: none; 
+}
+.storynormaltxt A:hover {
+	COLOR: #d71920; TEXT-DECORATION: underline; 
+}
+.normaltxt {
+	FLOAT: left; FONT: 12px/18px arial; COLOR: #cc0000
+}
+.normaltxt A {
+	COLOR: #004990; TEXT-DECORATION: none
+}
+.normaltxt A:hover {
+	COLOR: #004990; TEXT-DECORATION: underline
+}
+.phototxt {
+    background-color: #333333;
+    color: #FFFFFF;
+    float: left;
+    font: 12px/18px arial;
+    width: 100%;
+}
+.phototxt A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.phototxt A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+P {
+	MARGIN: 0px 0px 12px
+}
+P IMG {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid
+}
+.breadcrumb {
+	PADDING-LEFT: 0px; FONT: bold 12px/16px arial; COLOR: #000000
+}
+.breadcrumb A {
+	PADDING-LEFT: 5px; FONT: bold 12px/16px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.breadcrumb A:hover {
+	PADDING-LEFT: 5px; FONT: bold 12px/16px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.storyHeadline {
+	PADDING-LEFT: 5px; FONT: bold 16px arial; COLOR: #2E3094
+}
+
+.storyHeadline h1 {
+	5px; FONT: bold 15px/21px arial; COLOR: #dd1920;padding:0; margin:0;
+}
+.storyHeadline A {
+	FONT: bold 15px/21px arial; COLOR: #dd1920; TEXT-DECORATION: none
+}
+.storyHeadline A:hover {
+	FONT: bold 15px/21px arial; COLOR: #dd1920; TEXT-DECORATION: underline
+}
+.storystrap {
+	PADDING-LEFT: 5px; FONT: 11px arial; COLOR: #000000
+}
+.storystrap A {
+	FONT: 11px arial; COLOR: #000000; TEXT-DECORATION: none
+}
+.storystrap A:hover {
+	FONT: 11px arial; COLOR: #000000; TEXT-DECORATION: underline
+}
+.storytext {
+	PADDING-LEFT: 5px; FONT: 12px arial; COLOR: #6A6A6A
+}
+.storytext ul li{
+	 FONT: 12px arial; COLOR: #000000; line-height:18px; list-style:none; background:url(http://m.indiatoday.in/itwapsite/images/blue_squire_bullet.jpg) no-repeat left 7px; margin:0px 0 5px 0;margin:0px 0 2px 0; padding:0 2px 0 12px;
+}
+.headerlink {
+	FONT: 12px/18px arial; COLOR: #000000
+}
+.headerlink A {
+	FONT: 12px/18px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.headerlink A:hover {
+	FONT: 12px/18px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.Vheaderlink {
+	FONT: bold 12px/18px arial; COLOR: #004990
+}
+.Vheaderlink A {
+	FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.Vheaderlink A:hover {
+	FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.more {
+	FONT: bold 12px/18px arial; COLOR: #000000
+}
+.more A {
+	FONT: bold 12px/18px arial; COLOR: #000000; TEXT-DECORATION: none
+}
+.more A:hover {
+	FONT: bold 12px/18px arial; COLOR: #000000; TEXT-DECORATION: underline
+}
+.more1 {
+	FONT: bold 12px/18px arial; COLOR: #000000
+}
+.more1 A {
+	FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.more1 A:hover {
+	FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.link {
+	PADDING-RIGHT: 2px; FONT: 12px/18px arial; COLOR: #000000
+}
+.link A {
+	PADDING-RIGHT: 2px; FONT: 12px/18px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.link A:hover {
+	PADDING-RIGHT: 2px; FONT: 12px/18px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.grouptxt {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; FONT: 14px/18px arial; COLOR: #2E3094; PADDING-TOP: 0px
+}
+.grouptxt A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; FONT: 14px/18px arial; COLOR: #004990; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.grouptxt A:hover {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; FONT: 14px/18px arial; COLOR: #004990; PADDING-TOP: 0px; TEXT-DECORATION: underline
+}
+.back {
+	PADDING-LEFT: 2px; FLOAT: right; FONT: bold 12px/18px arial; COLOR: #000000
+}
+.back A {
+	PADDING-LEFT: 2px; FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: none
+}
+.back A:hover {
+	PADDING-LEFT: 2px; FONT: bold 12px/18px arial; COLOR: #004990; TEXT-DECORATION: underline
+}
+.copyright {
+	PADDING-RIGHT: 2px; FONT: 11px/15px arial; COLOR: #000000
+}
+.newtxt {
+	FONT: bold 12px/18px Verdana; COLOR: #ffffff
+}
+.newtxt A {
+	FONT: bold 12px/18px Verdana; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.newtxt A:hover {
+	FONT: bold 12px/18px Verdana; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.courtesy {
+	FONT: bold 12px/18px arial; COLOR: #d71920
+}
+.courtesy A {
+	COLOR: #d71920; TEXT-DECORATION: none
+}
+.courtesy A:hover {
+	COLOR: #d71920; TEXT-DECORATION: underline
+}
+TD {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+}
+a img{border:medium none;}
+.nav{
+    display: block;
+    margin: 0 0 4px;
+    overflow: hidden;
+}
+ul.tab-nav{padding:0; margin:0; background: #f85032; /* Old browsers */
+background: #dd1920; /* Old browsers */
+background: -moz-linear-gradient(top,  #dd1920 0%, #cf0404 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd1920), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* IE10+ */
+background: linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd1920', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+float:left; width:100%; border-bottom:1px solid #A0030D;
+}
+ul.tab-nav li{display:inline-block; border-right:1px solid #A0030D; padding:0; background: #dd1920; /* Old browsers */
+background: -moz-linear-gradient(top,  #dd1920 0%, #cf0404 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd1920), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* IE10+ */
+background: linear-gradient(top,  #dd1920 0%,#cf0404 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd1920', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+float:left; line-height:20px; min-width:70px; text-align:center;}
+ul.tab-nav li.last{border:medium none;}
+ul.tab-nav li a{color:#fff; text-decoration:none; font:bold 14px/18px Arial, Helvetica, sans-serif; padding:0;}
+
+.top-news{font:12px Arial, Helvetica, sans-serif; overflow:hidden; display:block; margin:0 0 8px 2px;}
+.top-title{font-size:18px; margin:0 0 5px 0; color:#004990}
+a.photo-chunk{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.photo-icon {
+    background: url("../images/photo-icon.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 12px;
+    left: 80px;
+    position: absolute;
+    top: 50px;
+    width: 13px;
+}
+
+.story-title{ margin:10px 0 0 0; vertical-align:middle; display:inline-block; max-width:180px; line-height:16px;}
+.gallery-title{ clear:both; display:block; font-size:10px;}
+.story-icon {
+    background: url("../images/story-icon.jpg") no-repeat scroll 0 6px transparent;
+    display: block;
+    float: left;
+    height: 18px;
+    margin: 0 10px 0 0;
+    width: 9px;
+}
+.back-btn{  margin:0 20px 0 0;}
+.next-btn{  margin:0 0 0 20px;}
+
+.video-icon {
+    background: url("../images/video-icon.gif") no-repeat scroll 0 7px transparent;
+    display: block;
+    float: left;
+    height: 17px;
+    margin: 0 10px 0 0;
+    width: 14px;
+}
+
+.simgrepeat {background-position: center top;background-repeat: no-repeat;height: 130px;margin: 0 auto;position: relative;width: 144px;}
+.photo-icon {}
+.photoicon {bottom: 8px;height: 30px;position: absolute;right: 8px;width: 30px;}
+.photoicon {background: url("../images/photoicon.png") repeat scroll 0 0 transparent;}
+.homegallery {position:relative; width:200px;}
+.arr-left {position:absolute;float:left; left:0; top:24px;}
+.arr-right {position:absolute;right:0; top:24px;float:left;}
+.left18marg {left:18px;}
+.gallerycont {width:179px; float:left;}
+.gallerycont a {color:#004990; font:normal 14px arial; line-height:16px;text-decoration:none;}
+.gallerycont a:hover { text-decoration:underline;}
+
+.strimgrepeat {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 66px;
+    margin: 0 8px 0 0;
+    position: relative;
+    width: 88px;
+	float:left;
+}
+.strphoto-icon {
+}
+.strphotoicon {
+    bottom: 2px;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+    width: 20px;
+}
+
+.strphotoicon {
+    background: url("../images/photo-icon-88x66.png") repeat scroll 22px 21px transparent;
+}
+
+.deactive {color:#004990; padding:2px 5px;text-decoration:none; border-bottom: 2px solid #2E3094;}
+.deactive a, .deactive a:hover{text-decoration:none; color:#004990}
+.active {font-weight:bold;color:#ffffff; padding:4px 5px 3px 5px;background-color:#2E3094;text-decoration:none;}
+.active a, .active a:hover {color:#ffffff; text-decoration:none;}
+
+.GridDataRight {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #C8D0DD;
+    border-left: 1px solid #FFFEFA;
+    border-top: 1px solid #FFFFFF;
+    color: #233F71;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 18px;
+    padding-right: 1px;
+    text-align: right;
+}
+.GridDataLeft {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #C8D0DD;
+    border-left: 1px solid #FFFEFA;
+    border-top: 1px solid #FFFFFF;
+    color: #233F71;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 18px;
+    padding-left: 1px;
+    text-align: left;
+}
+.Red {
+    border-left: 1px solid #FFFFFF;
+    color: #ff0000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 2px;
+    text-align: left;
+}
+.MoreFromMKT {
+    background-color: #F4F5F9;
+    border-bottom: 1px solid #C8D0DD;
+    border-top: 1px solid #C8D0DD;
+    color: #2E3094;
+    font-family: Arial,verdana;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    padding-left: 5px;
+    text-align: left;
+}
+.NormalTextWhite_Sel {
+    color: #1CB272;
+    font-family: Arial;
+    font-size: 9px;
+    text-decoration: underline;
+}
+.NormalTextWhite {
+    color: #005D98;
+    font-family: Arial;
+    font-size: 9px;
+    text-decoration: underline;
+}
+
+a.NormalTextWhite_Sel, a.NormalTextWhite_Sel:link, a.NormalTextWhite_Sel:visited, a.NormalTextWhite_Sel:active, a.NormalTextWhite_Sel:focus {
+    color: #1CB272;
+	font-size: 14px;
+    text-decoration: underline;
+}
+.NormalTextWhite a {
+    color: #004990;
+    font-family: Verdana;
+    font-size: 14px;
+    padding: 0 2px;
+    text-decoration: none;
+}
+
+.podcastbyline {
+    color: #000000;
+    font:bold 11px arial;
+    padding-left: 5px;
+    margin-top:3px
+
+}

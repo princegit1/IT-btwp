@@ -1,0 +1,107 @@
+   
+ <style>
+.adblocker-page{ padding:0px 10px; background:#fff; display:none;/*position:absolute;top:100px;*/}
+.adblocker-page h3{ font-size:26px; color:#333333; letter-spacing:2px; text-align:center; line-height:35px;}
+.adblocker-page h3 span{ background:url(http://media2.intoday.in/intoday/images/otext.gif) no-repeat center center; width:36px; height:34px; display:inline-block; position:relative; top:3px; margin:0 3px 0 1px;}
+.adblocker-page p{ font-size:17px; font-weight:300; color:#000; line-height:22px; padding:15px 0 30px;}
+.adblocker-page a.knowmore-bnt{ display:inline-block; padding:10px 30px; border:2px solid #C1C1C1; color:#A5A5A5; border-radius: 3px; font-size:17px; font-weight:300;}
+.adblocker-page .adblock-latestnews{ margin-top:50px;}  .adblocker-page .adblock-latestnews h3{ font-size:24px; color:#333; font-weight:600; text-transform:uppercase; padding-bottom:30px;}
+.adblocker-page .adblock-latestnews ul li{ width:95%; list-style:none; border-bottom:1px solid #C1C1C1; padding:5% 0; height:65px}
+.adblocker-page .adblock-latestnews ul li:nth-child(4){ border-bottom:0px;}
+.adblocker-page .adblock-latestnews ul li .newsimg{ width:88px; float:left; margin-right:10px;}
+.clr { clear:both;}
+.tabs { padding:0; margin:50px 0 0 0}
+.tabs ul { padding:0; margin:0; height:100px}
+.tabs ul li { list-style:none; display:inline-block; font-family:roboto; color:#666666; font-size:18px; text-transform:uppercase; margin:0px 15px; font-weight:bold; padding:5px 15px 5px 0; cursor:pointer; background:url(http://media2.intoday.in/intoday/images/hover_img.jpg) left bottom no-repeat; background-size:0px 0%;  transition: all 0.5s ease; }
+.tabs ul li:hover { transition: all 0.5s ease; background-size:100% 3px; }
+.tabs ul li.active { transition: all 0.5s ease; background-size:100% 3px;}
+.tabs ul li a {background:url(chrome-inactive.gif) left top no-repeat; text-decoration:}
+.tabs ul li:first-child{ margin-left:0;}
+
+.show_instruction { display:none;}
+#tab1 { display:block;}
+.show_instruction h2 { padding:0; margin:0; font-size:18px; line-height:60px; padding-bottom:15px;  }
+.show_instruction h2 img { float:left; margin-right:10px;}
+.show_instruction ul { padding:0; margin:0}
+.show_instruction ul li { list-style:none; color:#333333; padding-bottom:13px  }
+.chrome {padding-left:25px; background:url(http://media2.intoday.in/intoday/images/chrome-inactive.gif) left top no-repeat; }
+.chrome:hover { background:url(http://media2.intoday.in/intoday/images/chrome-active.gif) left top no-repeat; }
+.firefox {padding-left:25px; background:url(http://media2.intoday.in/intoday/images/firefox-inactive.gif) left top no-repeat; }
+.firefox:hover { background:url(http://media2.intoday.in/intoday/images/firefox-active.gif) left top no-repeat; }
+.safari {padding-left:25px; background:url(http://media2.intoday.in/intoday/images/safari-inactive.gif) left top no-repeat; }
+.safari:hover { background:url(http://media2.intoday.in/intoday/images/safari-active.gif) left top no-repeat; }
+.ie {padding-left:25px; background:url(http://media2.intoday.in/intoday/images/ie-inactive.gif) left top no-repeat; }
+.ie:hover { background:url(http://media2.intoday.in/intoday/images/ie-active.gif) left top no-repeat; }
+.adblock-latestnews li a{ color:#625e5f; text-decoration:none; line-height:21px;}
+
+.countdown_adblock {text-transform: uppercase;display:block;color: #fff;background: #646464;height: 44px;width: 244px;padding-left: 15px;font-size: 22px;border-radius: 5px;margin: 20px auto;line-height: 45px;text-align: center;}
+.countdown_adblock a{color:#fff;}	  
+.countdown_adblock .cont_to_site{ display:none}
+.countdown_adblock .cont_to_site a{float:left; color:#fff; text-decoration:none;transition: all 0.2s ease-in-out;} 
+
+.countdown_adblock .cont_to_site a:hover{color: #b3b3b3;opacity:0.6;transition:all .4s ease-in-out;}
+.countdown_adblock .cont_to_site:hover .arrow{ margin-left:15px;transition:all .4s ease-in-out}
+.countdown_adblock .cont_down{}
+.countdown_adblock .cont_down .counter_hh{}
+.arrow{ }
+.countdown_adblock .cont_to_site a:hover .arrow{ padding-left:5px;}
+.cont_to_site,.cont_down{ display:none}
+.active_bl{ display:block !important;}
+.counter_hh {opacity:1; animation: flickerAnimation 1s infinite;}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}              
+
+</style>
+
+<div class="adblocker-page" id="adbocker_alt">
+ 
+  <h3>YOUR AD BL<span class="otext"></span>CKER IS ON</h3>
+  <p>Hi,<br>
+Don't like ads? Neither do we, but they help us bring all this content to you, absolutely free. Please whitelist us to continue reading and watching news from India's most trusted news source.</p>
+</div>
+<script type="text/javascript">var __at__ = 0;</script><script type="text/javascript" src="http://media2.intoday.in/aajtak/1.0.3/resources/advertisement_zedo_banner_zedo_google/atitg.js"></script><script type="text/javascript">if(__at__ != 1) {setTimeout(openPopup(), 4000);}</script>
+<script>   
+
+  $(document).ready(function(){
+   if(__at__ != 1) {setTimeout(openPopup(), 4000);}
+	
+	});
+function openPopup(){
+				var win_height_n = $(document).height();
+				var win_width_n = $(window).width();
+				var popup_width = $('#adbocker_alt').width();
+				win_width_n = win_width_n - popup_width;
+				win_width_n = win_width_n/2;
+				var blockhtml = $('.adblocker-page').detach();
+				console.log(blockhtml);
+				$('.adblock_container').html(blockhtml);
+				$('.photo_number,.photo_caption').css('display','none'); 
+				$('#adbocker_alt').css('display','block'); 
+				ga("send", "event", "AdblockPopup","BT-Gallery-wapsite", "true")
+				ga("send", "event", "Adblock", "BT-Gallery-wapsite", "true")			
+
+	}
+function checkAds(){
+	var ab_c3 = $('#adblock_ad').height();
+	
+	console.log("---------------:>" +  ab_c3 );
+try {
+	//if( (ab_c3==0)){ 
+	if(adBlock){
+	openPopup();
+	console.log("Ads not found");
+	}else{
+	console.log("Ads found");
+		}
+		}catch(e)
+		{
+		console.log("Exception E: " +e);
+		}
+		
+		}
+	
+	
+</script>

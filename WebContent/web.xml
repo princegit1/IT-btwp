@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    	       
+<filter>           
+	<filter-name>UrlRewriteFilter</filter-name>     
+	<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>      
+</filter>             
+<filter-mapping>          
+	<filter-name>UrlRewriteFilter</filter-name>  
+	<url-pattern>/*</url-pattern>                 
+</filter-mapping>      
+<servlet>   
+	<servlet-name>StoryServlet</servlet-name>    
+    <servlet-class>com.itgd.content.StoryServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>GalleryServlet</servlet-name>
+    <servlet-class>com.itgd.content.GalleryServlet</servlet-class>
+</servlet>
+<servlet>    
+    <servlet-name>GalleryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.GalleryListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GallerySectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.GallerySectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.SectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.itgd.content.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+	<servlet-name>VideoLiteServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoLiteServlet</servlet-class>  
+</servlet>
+<servlet-mapping>
+    <servlet-name>VideoLiteServlet</servlet-name>
+    <url-pattern>/lite/video/*</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>StoryServlet</servlet-name>
+    <url-pattern>/story/*</url-pattern>
+</servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GalleryServlet</servlet-name>
+    <url-pattern>/gallery/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GalleryListServlet</servlet-name>
+    <url-pattern>/gallerylist/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GallerySectionServlet</servlet-name>
+    <url-pattern>/galleries/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>    
+    <servlet-name>GallerySectionServlet</servlet-name>
+    <url-pattern>/photoplay/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SectionServlet</servlet-name>
+    <url-pattern>/section/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/category/*</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+	<servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/categorylist/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SubCategoryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.SubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SubCategoryListServlet</servlet-name>
+    <url-pattern>/subcategory/*</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+	<servlet-name>SubSubCategoryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.SubSubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SubSubCategoryListServlet</servlet-name>
+    <url-pattern>/subsubcategory/*</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>VideoServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VideoServlet</servlet-name>
+    <url-pattern>/video/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>VideoListServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VideoListServlet</servlet-name>
+    <url-pattern>/videolist/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>VideoSectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoSectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VideoSectionServlet</servlet-name>
+    <url-pattern>/videos</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>VideoSubListServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoSubListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>VideoSubListServlet</servlet-name>
+    <url-pattern>/videocategory/*</url-pattern>     
+</servlet-mapping>    
+   <servlet>
+    <servlet-name>search</servlet-name>
+    <servlet-class>com.itgd.content.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+ <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <error-page>
+	<error-code>404</error-code>
+	<location>/pagenotfound.jsp</location>
+</error-page>
+
+
+<!-- Start LITE -->
+
+<servlet>
+	<servlet-name>StoryLiteServlet</servlet-name>
+    <servlet-class>com.itgd.content.StoryLiteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>StoryLiteServlet</servlet-name>
+    <url-pattern>/lite/story/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>GalleryLiteServlet</servlet-name>
+    <servlet-class>com.itgd.content.GalleryLiteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>GalleryLiteServlet</servlet-name>
+    <url-pattern>/lite/gallery/*</url-pattern>
+</servlet-mapping>
+
+<!-- End LITE-->
+
+
+
+</web-app>
+                       
+
+
+
+                            
